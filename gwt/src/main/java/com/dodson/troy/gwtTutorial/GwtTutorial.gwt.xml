@@ -1,0 +1,19 @@
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.0//EN"
+  "http://google-web-toolkit.googlecode.com/svn/releases/2.0/distro-source/core/src/gwt-module.dtd">
+<module rename-to="GwtTutorial">
+
+  <!-- Inherit the core Web Toolkit stuff.                  -->
+  <inherits name='com.google.gwt.user.User'/>
+
+  <!-- Inherit Spring and hibernate                         -->
+  <!-- <inherits name="org.springframework"/> -->
+  <!--<inherits name="org.hibernate" />-->
+
+  <!-- Specify the app entry point class.                   -->
+  <entry-point class='com.dodson.troy.gwtTutorial.client.GwtTutorial'/>
+
+
+  <!-- Specify the app servlets.                   -->
+  <servlet path='/GwtTutorialService' class='com.dodson.troy.gwtTutorial.server.GwtTutorialServiceImpl'/>
+
+</module>

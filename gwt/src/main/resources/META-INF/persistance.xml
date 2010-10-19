@@ -1,0 +1,30 @@
+<!--<?xml version="1.0" encoding="ISO-8859-1"?>-->
+
+<!--<persistence xmlns="http://java.sun.com/xml/ns/persistence"-->
+             <!--xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+             <!--xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"-->
+             <!--version="2.0">-->
+  <!--&lt;!&ndash; xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd" &ndash;&gt;-->
+
+  <!--<persistence-unit name="DATABASE" transaction-type="RESOURCE_LOCAL">-->
+    <!--<provider>org.hibernate.ejb.HibernatePersistence</provider>-->
+
+    <!--<class>com.dodson.troy.gwtTutorial.data.model.MyClass</class>-->
+
+    <!--&lt;!&ndash; Note: in ear or war development, the login information MUST be outside the jar file! &ndash;&gt;-->
+    <!--<properties>-->
+      <!--<property name="hibernate.connection.driver_class" value="net.sourceforge.jtds.jdbc.Driver"/>-->
+      <!--<property name="hibernate.connection.url" value="jdbc:jtds:sqlserver://localhost/CCLASEL"/>-->
+      <!--<property name="hibernate.connection.username" value="User"/>-->
+      <!--<property name="hibernate.connection.password" value="Password"/>-->
+      <!--<property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect"/>-->
+
+      <!--<property name="hibernate.connection.default_schema" value="?"/>-->
+      <!--<property name="hibernate.generate_statistics" value="true"/>-->
+      <!--<property name="hibernate.hbm2ddl.auto" value="create-drop"/>-->
+      <!--<property name="hibernate.show_sql" value="true"/>-->
+      <!--<property name="hibernate.format_sql" value="true"/>-->
+    <!--</properties>-->
+  <!--</persistence-unit>-->
+
+<!--</persistence>-->
