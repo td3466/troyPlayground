@@ -7,6 +7,7 @@ import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.RootPanel;
+import org.workingonit.gwtbridge.GwtServicesRegistrar;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>
@@ -20,27 +21,6 @@ public class GwtTutorial
      */
     public void onModuleLoad()
     {
-//        //Get application context
-//        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
-//          "/META-INF/spring/application-context.xml", "/META-INF/spring/jpa-context.xml");
-
-//        //Get repository
-//        RepositoryFactory factory = (RepositoryFactory) context.getBean( RepositoryFactory.BEAN_ID );
-//        Repository repository = factory.create();
-//        MyClass myclas = repository.getData(  );
-
-//        Repository repository = new Repository();
-//        MyClass myclass = repository.getData(  );
-
-//        //Put details of job into a label
-//        final Label label = new Label( );
-//        label.setText( "Data" );
-
-//        //Add label to panel
-//        RootPanel.get("slot1").add( label );
-
-        //final Grid grid = new Grid()
-
         final Button button = new Button( "Click me" );
         final Label label = new Label();
 

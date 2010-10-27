@@ -3,14 +3,27 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          version="2.5">
+  <!-- Configuration locations must consist of one or more comma- or space-delimited
+       fully-qualified @Configuration classes. Fully-qualified packages may also be
+       specified for component-scanning -->
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>classpath*:/META-INF/spring/*-context.xml</param-value>
+  </context-param>
+
+  <!-- Bootstrap the root
+       Bootstrap the root application context as usual using ContextLoaderListener -->
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
 
   <servlet>
-    <servlet-name>GwtTutorialService</servlet-name>
-    <servlet-class>com.dodson.troy.gwtTutorial.server.GwtTutorialServiceImpl</servlet-class>
+    <servlet-name>GWTBridge</servlet-name>
+    <servlet-class>org.workingonit.gwtbridge.GwtBridgeServlet</servlet-class>
   </servlet>
 
   <servlet-mapping>
-    <servlet-name>GwtTutorialService</servlet-name>
-    <url-pattern>/GwtTutorial/GwtTutorialService</url-pattern>
+    <servlet-name>GWTBridge</servlet-name>
+    <url-pattern>/GwtTutorial/service/*</url-pattern>
   </servlet-mapping>
 </web-app>

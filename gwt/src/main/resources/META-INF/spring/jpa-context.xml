@@ -1,20 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
 
-<!--<?xml version="1.0" encoding="UTF-8"?>-->
-<!--<beans xmlns="http://www.springframework.org/schema/beans"-->
-       <!--xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"-->
-       <!--xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">-->
-
-  <!--&lt;!&ndash; Set up entity manager &ndash;&gt;-->
+  <!-- Set up entity manager -->
   <!--<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalEntityManagerFactoryBean">-->
-    <!--<property name="persistenceUnitName" value="CCLASEL"/>-->
+  <!--<property name="persistenceUnitName" value="CCLASEL"/>-->
   <!--</bean>-->
 
-  <!--&lt;!&ndash; Set up transaction manager &ndash;&gt;-->
+  <!-- Set up transaction manager -->
   <!--<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">-->
-    <!--<property name="entityManagerFactory" ref="entityManagerFactory"/>-->
+  <!--<property name="entityManagerFactory" ref="entityManagerFactory"/>-->
   <!--</bean>-->
 
-  <!--&lt;!&ndash; Set up bean processor that detects @Transactional annotation on bean methods &ndash;&gt;-->
+  <!-- Set up bean processor that detects @Transactional annotation on bean methods -->
   <!--<bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor"/>-->
   <!--<tx:annotation-driven transaction-manager="transactionManager"/>-->
-<!--</beans>-->
+</beans>

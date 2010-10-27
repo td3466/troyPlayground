@@ -52,18 +52,16 @@
       <scope>provided</scope>
     </dependency>
 
-    <!--
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-orm</artifactId>
       <version>3.0.4.RELEASE</version>
     </dependency>
-    -->
 
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-entitymanager</artifactId>
-      <version>3.6.0.CR1</version>
+      <version>3.6.0.Final</version>
     </dependency>
     <dependency>
       <groupId>org.apache.geronimo.specs</groupId>
@@ -74,6 +72,11 @@
       <groupId>commons-dbcp</groupId>
       <artifactId>commons-dbcp</artifactId>
       <version>1.4</version>
+    </dependency>
+    <dependency>
+      <groupId>org.workingonit</groupId>
+      <artifactId>gwtBridge</artifactId>
+      <version>0.1-SNAPSHOT</version>
     </dependency>
 
     <!-- SQL JDBC Driver -->
@@ -98,7 +101,7 @@
   <repositories>
     <repository>
       <id>org.jboss.repository.maven.release</id>
-      <url>http://repository.jboss.org/nexus/content/repositories/releases/</url>
+      <url>http://repository.jboss.org/nexus/content/groups/public-jboss</url>
       <snapshots>
         <enabled>false</enabled>
       </snapshots>

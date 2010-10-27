@@ -1,10 +1,12 @@
 package com.dodson.troy.gwtTutorial.server;
 
-import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import com.dodson.troy.gwtTutorial.client.GwtTutorialService;
+import javax.inject.Named;
 
-public class GwtTutorialServiceImpl extends RemoteServiceServlet
-    implements GwtTutorialService
+import static com.dodson.troy.gwtTutorial.client.GwtTutorialService.SERVICE_NAME;
+
+@Named( SERVICE_NAME )
+public class GwtTutorialServiceImpl implements GwtTutorialService
 {
     // Implementation of sample interface method
     public String getMessage( String msg )

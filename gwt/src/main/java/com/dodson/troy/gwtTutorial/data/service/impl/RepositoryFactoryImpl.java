@@ -9,12 +9,12 @@ import javax.inject.Named;
  * @author troy.dodson@mincom.com
  * @since 0.1
  */
-@Named( RepositoryFactory.BEAN_ID)
+//@Named( RepositoryFactory.BEAN_ID)
 public class RepositoryFactoryImpl implements RepositoryFactory
 {
     public Repository create()
     {
-         //To change body of implemented methods use File | Settings | File Templates.
-         return new Repository(); 
+        //To change body of implemented methods use File | Settings | File Templates.
+        return new Repository();
     }
 }
