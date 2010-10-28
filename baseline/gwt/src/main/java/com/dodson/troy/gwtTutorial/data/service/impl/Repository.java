@@ -1,6 +1,6 @@
 package com.dodson.troy.gwtTutorial.data.service.impl;
 
-import com.dodson.troy.gwtTutorial.data.model.MyClass;
+import com.dodson.troy.gwtTutorial.data.model.User;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
@@ -19,11 +19,11 @@ public class Repository
     private EntityManager entityManager;
 
     //    @Transactional
-    public MyClass getJob( String labCode, String job )
+    public User getJob( String labCode, String job )
     {
         String qlString = "SELECT j FROM MyClass j WHERE j.jobNo = '" + job + "' and j.labCode = '" + labCode + "'";
         Query query = entityManager.createQuery( qlString );
-        MyClass singleResult = (MyClass) query.getSingleResult();
+        User singleResult = (User) query.getSingleResult();
         return singleResult;
     }
 }
