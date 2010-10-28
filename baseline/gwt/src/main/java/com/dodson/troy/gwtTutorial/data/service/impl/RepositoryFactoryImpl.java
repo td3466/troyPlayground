@@ -1,7 +1,6 @@
 package com.dodson.troy.gwtTutorial.data.service.impl;
 
 import com.dodson.troy.gwtTutorial.data.service.RepositoryFactory;
-import javax.inject.Named;
 
 /**
  * TODO: Documentation

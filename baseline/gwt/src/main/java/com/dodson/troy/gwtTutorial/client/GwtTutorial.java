@@ -7,7 +7,6 @@ import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.RootPanel;
-import org.workingonit.gwtbridge.GwtServicesRegistrar;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>

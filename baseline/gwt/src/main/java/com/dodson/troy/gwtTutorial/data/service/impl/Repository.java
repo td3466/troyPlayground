@@ -2,7 +2,6 @@ package com.dodson.troy.gwtTutorial.data.service.impl;
 
 import com.dodson.troy.gwtTutorial.data.model.MyClass;
 import javax.inject.Inject;
-import javax.inject.Named;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 // import org.springframework.transaction.annotation.Transactional;
