@@ -17,7 +17,16 @@ public interface User
      */
     String userName();
 
-    boolean validatePassword( String password );
+    /**
+     * Authenticate user password with the specified password argument.
+     *
+     * @param password the password to authenticate.
+     *
+     * @return {@code true} if the password matches, {@code false} otherwise.
+     *
+     * @since 0.1
+     */
+    boolean authenticate( String password );
 
     boolean changePassword( String oldPassword, String newPassword );
 }
