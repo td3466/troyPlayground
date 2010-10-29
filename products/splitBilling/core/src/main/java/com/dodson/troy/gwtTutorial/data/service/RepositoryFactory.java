@@ -1,6 +1,6 @@
 package com.dodson.troy.gwtTutorial.data.service;
 
-import com.dodson.troy.gwtTutorial.data.service.impl.Repository;
+import com.dodson.troy.gwtTutorial.data.model.service.impl.Repository;
 
 /**
  * TODO: Documentation

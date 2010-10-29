@@ -1,4 +1,4 @@
-package com.dodson.troy.gwtTutorial.data.service.impl;
+package com.dodson.troy.gwtTutorial.data.model.service.impl;
 
 import com.dodson.troy.gwtTutorial.data.service.RepositoryFactory;
 

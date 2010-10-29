@@ -11,6 +11,7 @@
 
   <modules>
     <module>poms</module>
+    <module>core</module>
     <module>war</module>
   </modules>
 </project>

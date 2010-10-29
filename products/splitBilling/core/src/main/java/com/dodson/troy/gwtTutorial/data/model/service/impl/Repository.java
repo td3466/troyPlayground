@@ -1,4 +1,4 @@
-package com.dodson.troy.gwtTutorial.data.service.impl;
+package com.dodson.troy.gwtTutorial.data.model.service.impl;
 
 import com.dodson.troy.gwtTutorial.data.model.User;
 import javax.inject.Inject;
@@ -21,7 +21,7 @@ public class Repository
     //    @Transactional
     public User getJob( String labCode, String job )
     {
-        String qlString = "SELECT j FROM MyClass j WHERE j.jobNo = '" + job + "' and j.labCode = '" + labCode + "'";
+        String qlString = "SELECT j FROM User j WHERE j.jobNo = '" + job + "' and j.labCode = '" + labCode + "'";
         Query query = entityManager.createQuery( qlString );
         User singleResult = (User) query.getSingleResult();
         return singleResult;
