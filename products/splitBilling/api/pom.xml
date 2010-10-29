@@ -5,14 +5,8 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.dodson.troy.products.splitBilling</groupId>
-  <artifactId>builder</artifactId>
+  <artifactId>api</artifactId>
   <version>0.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
 
-  <modules>
-    <module>poms</module>
-    <module>api</module>
-    <module>core</module>
-    <module>war</module>
-  </modules>
+
 </project>

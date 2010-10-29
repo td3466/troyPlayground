@@ -16,6 +16,12 @@
   <version>0.1-SNAPSHOT</version>
 
   <dependencies>
+    <dependency>
+      <groupId>com.dodson.troy.products.splitBilling</groupId>
+      <artifactId>api</artifactId>
+      <version>0.1-SNAPSHOT</version>
+    </dependency>
+
     <!-- Common -->
     <dependency>
       <groupId>javax.inject</groupId>
